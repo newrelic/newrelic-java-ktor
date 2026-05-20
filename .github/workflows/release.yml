@@ -1,7 +1,10 @@
 name: Build and Release (Manual Run JDK 21) v1.4
 
-on: 
+on:
  workflow_dispatch: # This event allows manual triggering
+
+permissions:
+  contents: write
 
 env:
   THIRD_PARTY_GIT_AUTHOR_EMAIL: opensource+bot@newrelic.com
